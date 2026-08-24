@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joel Vigário — Back-end Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo"><span class="dot"></span>joel.dev</div>
+    <div class="nav-links">
+      <a href="#about"><span data-i18n="pt">sobre</span><span data-i18n="en">about</span></a>
+      <a href="#stack"><span data-i18n="pt">stack</span><span data-i18n="en">stack</span></a>
+      <a href="#projects"><span data-i18n="pt">projetos</span><span data-i18n="en">projects</span></a>
+      <a href="#contact"><span data-i18n="pt">contacto</span><span data-i18n="en">contact</span></a>
+    </div>
+    <div style="display:flex;gap:14px;align-items:center;">
+      <div class="lang-toggle">
+        <button id="btn-pt" class="active">PT</button>
+        <button id="btn-en">EN</button>
+      </div>
+      <a class="nav-cta" href="#contact"><span data-i18n="pt">Fala comigo</span><span data-i18n="en">Get in touch</span></a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow"><span data-i18n="pt">DISPONÍVEL PARA PROJETOS</span><span data-i18n="en">AVAILABLE FOR PROJECTS</span></div>
+      <h1><span data-i18n="pt">Olá, sou <span class="highlight">Joel</span> Vigário.</span><span data-i18n="en">Hi, I'm <span class="highlight">Joel</span> Vigário.</span></h1>
+      <div class="hero-role"><span id="role-text"></span><span class="cursor">_</span></div>
+      <p class="hero-desc">
+        <span data-i18n="pt">Construo aplicações back-end robustas com PHP &amp; Laravel, e junto a isso uma visão de design e de negócio a cada projeto que crio.</span>
+        <span data-i18n="en">I build robust back-end applications with PHP &amp; Laravel, bringing a design and business mindset to every project I create.</span>
+      </p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#projects">
+          <span data-i18n="pt">Ver projetos</span><span data-i18n="en">View projects</span> →
+        </a>
+        <a class="btn-secondary" href="https://github.com/JoelVigario" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+
+    <div class="terminal">
+      <div class="terminal-bar">
+        <span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span>
+        <span class="terminal-title">joel@portfolio: ~</span>
+      </div>
+      <div class="terminal-body">
+        <div class="t-line"><span class="t-prompt">$</span> php artisan whoami</div>
+        <div class="t-line">&nbsp;</div>
+        <div class="t-line"><span class="t-key">class</span> <span class="t-func">Developer</span> {</div>
+        <div class="t-line">&nbsp;&nbsp;<span class="t-var">$name</span> = <span class="t-string">'Joel Zacarias Vigário'</span>;</div>
+        <div class="t-line">&nbsp;&nbsp;<span class="t-var">$stack</span> = [<span class="t-string">'PHP'</span>, <span class="t-string">'Laravel'</span>, <span class="t-string">'MySQL'</span>];</div>
+        <div class="t-line">&nbsp;&nbsp;<span class="t-var">$roles</span> = [<span class="t-string">'dev'</span>, <span class="t-string">'designer'</span>, <span class="t-string">'founder'</span>];</div>
+        <div class="t-line">&nbsp;&nbsp;<span class="t-comment">// sempre a construir algo novo</span></div>
+        <div class="t-line">}</div>
+        <div class="t-line">&nbsp;</div>
+        <div class="t-line"><span class="t-prompt">$</span> <span style="opacity:.4">▍</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-num">01 · <span data-i18n="pt">sobre</span><span data-i18n="en">about</span></div>
+      <h2 class="section-title"><span data-i18n="pt">Código, design e visão de negócio</span><span data-i18n="en">Code, design and a founder's mindset</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p data-i18n-block="pt">Sou estudante de <strong>Engenharia Informática</strong>, com foco em desenvolvimento <strong>back-end usando PHP e Laravel</strong>. Gosto de construir sistemas sólidos, bem estruturados e prontos para crescer.</p>
+        <p data-i18n-block="pt">Fora do código, também sou <strong>designer gráfico</strong> — o que me ajuda a pensar em experiência e não só em lógica — e <strong>empreendedor</strong>, dono de uma gráfica/escritório de design onde aplico essas duas paixões no dia a dia.</p>
+        <p data-i18n-block="en">I'm an <strong>Informatics Engineering</strong> student, focused on <strong>back-end development with PHP and Laravel</strong>. I enjoy building solid, well-structured systems built to grow.</p>
+        <p data-i18n-block="en">Outside of code, I'm also a <strong>graphic designer</strong> — which shapes how I think about experience, not just logic — and an <strong>entrepreneur</strong>, running a print/design studio where I apply both passions daily.</p>
+        <div class="role-tags">
+          <span class="role-tag" data-i18n="pt">🎓 Eng. Informática</span><span class="role-tag" data-i18n="en">🎓 CS Engineering</span>
+          <span class="role-tag" data-i18n="pt">⚙️ Back-end Developer</span><span class="role-tag" data-i18n="en">⚙️ Back-end Developer</span>
+          <span class="role-tag" data-i18n="pt">🎨 Designer Gráfico</span><span class="role-tag" data-i18n="en">🎨 Graphic Designer</span>
+          <span class="role-tag" data-i18n="pt">🚀 Empreendedor</span><span class="role-tag" data-i18n="en">🚀 Entrepreneur</span>
+        </div>
+      </div>
+      <div class="stack-block" id="stack">
+        <div class="stack-block-title">// TECH STACK</div>
+        <div class="stack-grid">
+          <span class="stack-item">PHP</span>
+          <span class="stack-item">Laravel</span>
+          <span class="stack-item">MySQL</span>
+          <span class="stack-item">JavaScript</span>
+          <span class="stack-item">HTML5</span>
+          <span class="stack-item">CSS3</span>
+          <span class="stack-item">TailwindCSS</span>
+          <span class="stack-item">Java</span>
+          <span class="stack-item">Spring Boot</span>
+        </div>
+        <div class="stack-block-title" style="margin-top:22px;">// DESIGN</div>
+        <div class="stack-grid">
+          <span class="stack-item">Photoshop</span>
+          <span class="stack-item">Canva</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-num">02 · <span data-i18n="pt">projetos</span><span data-i18n="en">projects</span></div>
+      <h2 class="section-title"><span data-i18n="pt">Trabalhos recentes</span><span data-i18n="en">Recent work</span></h2>
+      <p class="section-sub" data-i18n-block="pt">Espaço reservado — adiciona os teus projetos reais (nome, descrição, stack e link) para substituir os exemplos abaixo.</p>
+      <p class="section-sub" data-i18n-block="en">Placeholder space — add your real projects (name, description, stack and link) to replace the examples below.</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-icon">01</div>
+        <h3><span data-i18n="pt">Nome do Projeto</span><span data-i18n="en">Project Name</span></h3>
+        <p data-i18n-block="pt">Breve descrição do que o projeto faz e o problema que resolve.</p>
+        <p data-i18n-block="en">Short description of what the project does and the problem it solves.</p>
+        <div class="project-stack"><span>Laravel</span><span>MySQL</span><span>Tailwind</span></div>
+        <a class="project-link" href="#">GitHub ↗</a>
+        <div class="placeholder-note" data-i18n="pt">⚠ Substituir por projeto real</div>
+        <div class="placeholder-note" data-i18n="en">⚠ Replace with real project</div>
+      </div>
+      <div class="project-card">
+        <div class="project-icon">02</div>
+        <h3><span data-i18n="pt">Nome do Projeto</span><span data-i18n="en">Project Name</span></h3>
+        <p data-i18n-block="pt">Breve descrição do que o projeto faz e o problema que resolve.</p>
+        <p data-i18n-block="en">Short description of what the project does and the problem it solves.</p>
+        <div class="project-stack"><span>PHP</span><span>JavaScript</span></div>
+        <a class="project-link" href="#">GitHub ↗</a>
+        <div class="placeholder-note" data-i18n="pt">⚠ Substituir por projeto real</div>
+        <div class="placeholder-note" data-i18n="en">⚠ Replace with real project</div>
+      </div>
+      <div class="project-card">
+        <div class="project-icon">03</div>
+        <h3><span data-i18n="pt">Nome do Projeto</span><span data-i18n="en">Project Name</span></h3>
+        <p data-i18n-block="pt">Breve descrição do que o projeto faz e o problema que resolve.</p>
+        <p data-i18n-block="en">Short description of what the project does and the problem it solves.</p>
+        <div class="project-stack"><span>Java</span><span>Spring Boot</span></div>
+        <a class="project-link" href="#">GitHub ↗</a>
+        <div class="placeholder-note" data-i18n="pt">⚠ Substituir por projeto real</div>
+        <div class="placeholder-note" data-i18n="en">⚠ Replace with real project</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="contact-wrap">
+      <h2><span data-i18n="pt">Vamos construir algo juntos?</span><span data-i18n="en">Let's build something together?</span></h2>
+      <p data-i18n-block="pt">Estou disponível para projetos de desenvolvimento back-end, design gráfico ou parcerias. Escolhe o melhor canal.</p>
+      <p data-i18n-block="en">I'm available for back-end development projects, graphic design or partnerships. Pick the best channel.</p>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:joelvigario@gmail.com">✉ joelvigario@gmail.com</a>
+        <a class="contact-link" href="https://wa.me/244930426926" target="_blank" rel="noopener">💬 WhatsApp</a>
+        <a class="contact-link" href="https://www.linkedin.com/in/joel-vig%C3%A1rio-72521128b/" target="_blank" rel="noopener">in LinkedIn</a>
+        <a class="contact-link" href="https://github.com/JoelVigario" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="contact-link" href="https://web.facebook.com/profile.php?id=61575663959041" target="_blank" rel="noopener"><span data-i18n="pt">Gráfica (Facebook)</span><span data-i18n="en">Print Studio (Facebook)</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© <span id="year"></span> Joel Zacarias Vigário — <span data-i18n="pt">construído com PHP no coração.</span><span data-i18n="en">built with PHP at heart.</span></p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
