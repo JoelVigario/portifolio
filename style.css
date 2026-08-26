@@ -192,6 +192,10 @@ section{padding:100px 0;position:relative;}
   margin-top:14px;border-top:1px dashed var(--border);padding-top:12px;
 }
 
+.visit {
+  margin-left: 40px; color: var(--accent-2);
+}
+
 /* contact */
 .contact-wrap{
   background:var(--bg-card);border:1px solid var(--border);border-radius:16px;
